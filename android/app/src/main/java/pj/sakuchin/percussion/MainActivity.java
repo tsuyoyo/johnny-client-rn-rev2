@@ -1,4 +1,4 @@
-package com.johnnyclientrnrev2;
+package pj.sakuchin.percussion;
 
 import com.facebook.react.ReactActivity;
 
