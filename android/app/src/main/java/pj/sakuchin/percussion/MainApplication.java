@@ -1,4 +1,4 @@
-package com.johnnyclientrnrev2;
+package pj.sakuchin.percussion;
 
 import android.app.Application;
 import android.content.Context;
@@ -10,6 +10,8 @@ import com.facebook.react.ReactPackage;
 import com.facebook.soloader.SoLoader;
 import java.lang.reflect.InvocationTargetException;
 import java.util.List;
+
+import pj.sakuchin.percussion.BuildConfig;
 
 public class MainApplication extends Application implements ReactApplication {
 

@@ -57,3 +57,10 @@ buck-out/
 
 # CocoaPods
 /ios/Pods/
+
+# Secrets
+src/app/configs/secrets.ts
+android/app/signature
+android/app/src/debug/google-services.json
+android/app/src/release/google-services.json
+ios/GoogleService-Info.plist
