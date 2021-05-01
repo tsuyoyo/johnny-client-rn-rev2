@@ -1,4 +1,5 @@
-import * as React from 'react';
+import React, { useState, useEffect } from 'react';
+import auth, { FirebaseAuthTypes } from '@react-native-firebase/auth';
 
 import {
   SafeAreaView,
@@ -21,10 +22,33 @@ import {
 
 export const Login = () => {
   const isDarkMode = useColorScheme() === 'dark';
-
   const backgroundStyle = {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
+
+  const [initializing, setInitializing] = useState(true);
+  const [user, setUser] = useState<FirebaseAuthTypes.User | null>();
+
+  // Handle user state changes
+  function onAuthStateChanged(user?: FirebaseAuthTypes.User) {
+    setUser(user);
+    if (initializing) setInitializing(false);
+  }
+
+  useEffect(() => {
+    const subscriber = auth().onAuthStateChanged(onAuthStateChanged);
+    return subscriber; // unsubscribe on unmount
+  }, []);
+
+  if (initializing) return null;
+
+  if (!user) {
+    return (
+      <View>
+        <Text>Login</Text>
+      </View>
+    );
+  }
 
   return (
     <SafeAreaView style={backgroundStyle}>
@@ -32,7 +56,6 @@ export const Login = () => {
       <ScrollView
         contentInsetAdjustmentBehavior="automatic"
         style={backgroundStyle}>
-        <Header />
         <Text>Login Login Login</Text>
       </ScrollView>
     </SafeAreaView>

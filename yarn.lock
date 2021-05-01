@@ -1103,13 +1103,18 @@
   resolved "https://registry.npmjs.org/@react-native-firebase/analytics/-/analytics-11.3.3.tgz"
   integrity sha512-ZI25xMDSXq/Hm1x1Ko1zUq/PMJbzQV3qN7NoD+yGGXB3ZDsGanzttnQ01Nm74A6ODab02FsjPpwYUD8aP1t1yA==
 
-"@react-native-firebase/app@^11.3.3":
-  version "11.3.3"
-  resolved "https://registry.npmjs.org/@react-native-firebase/app/-/app-11.3.3.tgz"
-  integrity sha512-bptZVXzI3GgPdjR2WKdpLr5zJS9TgyQcHxsO4RChykUsZYVe4PAI/AGDTd8e1w6JqMsABaVlY+nosnQv6Ye3vQ==
+"@react-native-firebase/app@^11.4.1":
+  version "11.4.1"
+  resolved "https://registry.yarnpkg.com/@react-native-firebase/app/-/app-11.4.1.tgz#42d5b8ff0b8e17398e2d1b65ca698b9990a76bcf"
+  integrity sha512-RzG3kGzKwO/Ets3S4XxAoki4GhzaHRVrnUDyr7U1zOL46xqOMGD7MKTmpYBa9qzh5GOz3aQwlRvu1yRhPHNGKA==
   dependencies:
     opencollective-postinstall "^2.0.1"
     superstruct "^0.6.2"
+
+"@react-native-firebase/auth@^11.4.1":
+  version "11.4.1"
+  resolved "https://registry.yarnpkg.com/@react-native-firebase/auth/-/auth-11.4.1.tgz#2e9baa1cea5efb9963188d70fedc753701d472a4"
+  integrity sha512-PlPYx12oUx7Y6M1W9aZITsDPrhA85klgwvJT0xxwihuUmdL2EGpmwhI7cOgiWGO3e0hmMI9HuiDnDmcxw8J6cA==
 
 "@react-native/assets@1.0.0":
   version "1.0.0"
